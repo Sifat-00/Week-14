@@ -23,14 +23,13 @@ int main()
     {
         if(ar[i]<0) continue;
         ar[i] += ar[i-1];
-        //x[i] = x[i - 1] + (ar[i] >= k);
+        x[i] = x[i - 1] + (ar[i] >= k);
     }
-    cout << ar[94] - ar[91];
-    // for (int i = 0; i < q; i++) 
-    // {
-    //     int a, b;
-    //     cin >> a >> b;
-    //     cout << ar[b] - ar[a - 1] << endl;
-    // }
+    for (int i = 0; i < q; i++) 
+    {
+        int a, b;
+        cin >> a >> b;
+        cout << ar[b] - ar[a - 1] << endl;
+    }
     return 0;
 }
